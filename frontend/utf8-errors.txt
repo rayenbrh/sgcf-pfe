@@ -1,0 +1,15 @@
+﻿src/components/layout/AppShell.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/layout/Topbar.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/ui/badge.tsx(2,20): error TS6133: 'VariantProps' is declared but its value is never read.
+src/components/ui/badge.tsx(2,40): error TS2307: Cannot find module 'class-variance-authority' or its corresponding type declarations.
+src/components/ui/button.tsx(3,20): error TS6133: 'VariantProps' is declared but its value is never read.
+src/components/ui/button.tsx(3,40): error TS2307: Cannot find module 'class-variance-authority' or its corresponding type declarations.
+src/features/ai-studio/AiStudio.tsx(2,1): error TS6192: All imports in import declaration are unused.
+src/features/ai-studio/AiStudio.tsx(4,39): error TS6133: 'Send' is declared but its value is never read.
+src/features/billing/InvoicesList.tsx(9,59): error TS6133: 'Clock' is declared but its value is never read.
+src/features/dashboard/Dashboard.tsx(22,9): error TS6133: 'role' is declared but its value is never read.
+src/features/documents/DocumentsHub.tsx(6,1): error TS6133: 'Badge' is declared but its value is never read.
+src/features/fiscal/DeadlinesList.tsx(7,1): error TS6133: 'Input' is declared but its value is never read.
+src/features/fiscal/DeadlinesList.tsx(9,54): error TS6133: 'Filter' is declared but its value is never read.
+src/features/tasks/TasksList.tsx(6,10): error TS6133: 'CheckSquare' is declared but its value is never read.
+src/mocks/db.ts(1,39): error TS6133: 'addMonths' is declared but its value is never read.
