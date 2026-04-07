@@ -11,9 +11,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
       manifest: {
-        name: 'Enterprise Accounting SaaS',
-        short_name: 'Accounting',
-        description: 'Premium PWA Accounting Platform',
+        name: 'SGCF — Gestion comptable et financière',
+        short_name: 'SGCF',
+        description: 'Système intégré de gestion comptable et financière',
         theme_color: '#ffffff',
         icons: [
           {
