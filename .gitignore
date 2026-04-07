@@ -1,0 +1,53 @@
+# Dependencies (monorepo — never commit)
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+build/
+**/dist/
+**/dist-ssr/
+*.tsbuildinfo
+
+# Vite / tooling caches (often 1000+ files)
+.vite/
+**/.vite/
+.turbo/
+.cache/
+.parcel-cache/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+**/.env
+!**/.env.example
+
+# Backend runtime
+backend/uploads/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE / editors
+.idea/
+*.swp
+*.swo
+*~
+
+# Test / coverage
+coverage/
+.nyc_output/
+
+# Optional local tooling
+*.local

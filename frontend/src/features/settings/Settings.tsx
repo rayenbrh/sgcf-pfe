@@ -13,9 +13,9 @@ export function Settings() {
         <div>
           <h1 className="text-3xl font-extrabold tracking-tight flex items-center">
             <SettingsIcon className="w-8 h-8 text-brand-blue mr-3" />
-            Platform Settings
+            Paramètres SGCF
           </h1>
-          <p className="text-text-secondary mt-1 font-medium">Manage your account and platform preferences.</p>
+          <p className="text-text-secondary mt-1 font-medium">Compte et préférences de l’application.</p>
         </div>
       </div>
 

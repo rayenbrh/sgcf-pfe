@@ -40,8 +40,8 @@ export function Dashboard() {
     <div className="space-y-8 animate-in fade-in duration-500">
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-extrabold tracking-tight">Overview</h1>
-          <p className="text-text-secondary mt-1 font-medium">Here's your firm's financial summary today.</p>
+          <h1 className="text-3xl font-extrabold tracking-tight">Tableau de bord</h1>
+          <p className="text-text-secondary mt-1 font-medium">Vue d’ensemble SGCF — activité et indicateurs du cabinet.</p>
         </div>
         <div className="flex gap-2">
            <div className="text-sm px-4 py-2 bg-brand-indigo/10 text-brand-indigo font-bold rounded-2xl border border-brand-indigo/20 shadow-sm">

@@ -1,19 +1,14 @@
-import { Bell, Search, Menu, Moon, Sun, ArrowLeftRight } from 'lucide-react'
+import { Bell, Search, Menu, Moon, Sun } from 'lucide-react'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
-import { useAppStore, type Role } from '@/store/useAppStore'
+import { useAppStore } from '@/store/useAppStore'
 import { useTheme } from 'next-themes'
-
-const ROLES: Role[] = ['Admin', 'Manager', 'Employee', 'Client']
+import { useAuth } from '@/context/AuthContext'
 
 export function Topbar() {
   const { theme, setTheme } = useTheme()
-  const { setSidebarOpen, role, setRole } = useAppStore()
-
-  const nextRole = () => {
-    const idx = ROLES.indexOf(role)
-    setRole(ROLES[(idx + 1) % ROLES.length])
-  }
+  const { setSidebarOpen } = useAppStore()
+  const { user } = useAuth()
 
   return (
     <header className="h-16 flex items-center justify-between px-4 md:px-6 bg-surface border-b border-border-soft z-10 sticky top-0 transition-colors">
@@ -27,10 +22,12 @@ export function Topbar() {
         </div>
       </div>
       <div className="flex items-center space-x-2 md:space-x-4">
-        <Button variant="outline" size="sm" onClick={nextRole} className="hidden sm:flex rounded-xl font-semibold border-brand-indigo/20 text-brand-indigo bg-brand-indigo/5" title="Switch Demo Role">
-          <ArrowLeftRight className="w-4 h-4 mr-2" />
-          {role}
-        </Button>
+        {user && (
+          <span className="hidden sm:inline text-sm text-text-secondary truncate max-w-[160px]">
+            {user.firstName} {user.lastName}
+            <span className="text-text-muted ml-2">({user.role})</span>
+          </span>
+        )}
         <Button variant="ghost" size="icon" className="rounded-xl" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
           <Sun className="h-5 w-5 hidden dark:block text-text-secondary" />
           <Moon className="h-5 w-5 dark:hidden text-text-secondary" />
